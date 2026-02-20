@@ -1,5 +1,4 @@
 import crypto from "crypto";
-<<<<<<< HEAD
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -8,7 +7,6 @@ export async function POST(req: Request) {
 
   const secret = process.env.PADDLE_WEBHOOK_SECRET!;
 
-=======
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
@@ -18,13 +16,11 @@ const supabase = createClient(
 
 function verifySignature(body: string, signature: string) {
   const secret = process.env.PADDLE_WEBHOOK_SECRET!;
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b
   const hmac = crypto
     .createHmac("sha256", secret)
     .update(body)
     .digest("hex");
 
-<<<<<<< HEAD
   if (hmac !== signature) {
     return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
@@ -45,7 +41,6 @@ function verifySignature(body: string, signature: string) {
 
   return NextResponse.json({ success: true });
 }
-=======
   return hmac === signature;
 }
 
@@ -89,4 +84,3 @@ export async function POST(req: Request) {
 
   return new Response("OK");
 }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b

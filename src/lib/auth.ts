@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { supabase } from "./supabase"
 
 export async function signIn(email: string, password: string) {
@@ -22,7 +21,6 @@ export async function signUp(email: string, password: string) {
 export async function signOut() {
   await supabase.auth.signOut()
 }
-=======
 import { supabase } from "./supabase";
 
 export async function signUp(
@@ -58,4 +56,3 @@ export async function signIn(email: string, password: string) {
   if (error) throw error;
   return data;
 }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b

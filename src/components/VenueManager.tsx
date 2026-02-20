@@ -94,8 +94,5 @@ export default function VenueManager() {
       </div>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b

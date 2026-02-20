@@ -41,8 +41,5 @@ export async function POST(req: Request) {
       { status: 500 }
     );
   }
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b

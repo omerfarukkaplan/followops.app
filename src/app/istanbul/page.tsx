@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export default function Istanbul() {
   const venues = [
     {
@@ -43,7 +42,6 @@ export default function Istanbul() {
               Rezervasyon Yap
             </button>
           </div>
-=======
 "use client";
 
 import { useEffect, useState } from "react";
@@ -116,13 +114,9 @@ export default function IstanbulPage() {
       <div className="grid md:grid-cols-2 gap-6">
         {venues.map((venue) => (
           <VenueCard key={venue.id} venue={venue} />
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b
         ))}
       </div>
     </main>
   );
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b

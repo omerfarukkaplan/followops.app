@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-<<<<<<< HEAD
 import Link from "next/link";
 
 export default function Register() {
@@ -19,7 +18,6 @@ export default function Register() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="w-full mb-4 p-3 rounded bg-zinc-800 border border-zinc-700"
-=======
 import { signUp } from "@/lib/auth";
 import { useRouter, useSearchParams } from "next/navigation";
 
@@ -79,12 +77,10 @@ export default function Register() {
           onChange={(e) =>
             setEmail(e.target.value)
           }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b
         />
 
         <input
           type="password"
-<<<<<<< HEAD
           placeholder="Şifre"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -105,7 +101,6 @@ export default function Register() {
     </main>
   );
 }
-=======
           className="w-full p-2 bg-[#333] rounded"
           placeholder="Şifre"
           value={password}
@@ -124,4 +119,3 @@ export default function Register() {
     </main>
   );
 }
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b

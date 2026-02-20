@@ -2,11 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
-<<<<<<< HEAD
 import Card from "@/components/Card";
-=======
 import Card from "@/components/VenueCard";
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b
 
 export default function Admin() {
   const [mrr, setMrr] = useState(0);
