@@ -15,14 +15,11 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@types/node": "^25.3.0",
-    "@types/react": "^19.2.14",
-=======
->>>>>>> 5e5d68f0d14a7ec724e3541b3cbb8ba1fce6312b
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5.0.0"
   }
 }
